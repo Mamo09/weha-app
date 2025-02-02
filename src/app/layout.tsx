@@ -45,6 +45,7 @@ export default function RootLayout({
 }) {  
   return (
     <html lang="en">
+      <link rel="icon" href="/assets/img/wehalogo.png" type="image/png"></link>
       <body
         className={`${notoSerifToto.variable} ${notoSansPalmyrene.variable}`}>
         <Navbar />  

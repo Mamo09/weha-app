@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import Header from './components/header';  
+import Navbar from './components/navbar';  
 import Footer from './components/footer';  
-import { Roboto, Fira_Code} from "next/font/google";
-import "./globals.css";
-
-const roboto = Roboto({
-  variable: "--font-roboto",
-  subsets: ["latin"],
-  weight: "100"
-});  
+import { Noto_Serif_Toto, Noto_Sans_Palmyrene } from 'next/font/google';
+import "./globals.css";  
+  
+// const ebGaramond = EB_Garamond({  
+//   variable: "--font-eb-garamond",
+//   subsets: ["latin"], 
+//   weight: "400"
+// });  
   
 
 // const geistSans = Geist({
@@ -20,6 +20,18 @@ const roboto = Roboto({
 //   variable: "--font-geist-mono",
 //   subsets: ["latin"],
 // });
+
+const notoSerifToto = Noto_Serif_Toto({
+  subsets: ['latin'],
+  variable: '--font-heading',
+  weight: '400', // Sesuaikan weight yang diperlukan
+});
+
+const notoSansPalmyrene = Noto_Sans_Palmyrene({
+  subsets: ['latin'],
+  variable: '--font-body',
+  weight: '400', // Sesuaikan weight yang diperlukan
+});
 
 export const metadata: Metadata = {
   title: "Weha-Project",
@@ -34,12 +46,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${roboto.variable} ${firaCode.variable} antialiased`}
-      >
-        <Header />  
-        <main className="container mx-auto p-4">{children}</main> 
+        className={`${notoSerifToto.variable} ${notoSansPalmyrene.variable}`}>
+        <Navbar />  
+        <main>{children}</main> 
         <Footer />  
       </body>
     </html>
   );
 }
+

@@ -3,19 +3,49 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fbfaf4;
+  --foreground: #130f07;
+
+  --color-primary: #a39066;
+  --color-secondary: #ffdf9c;
+  --color-accent: #e6b956;
 }
 
-@media (prefers-color-scheme: ) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* Contoh penggunaan warna */
+
+.primary-bg {
+  background-color: var(--color-primary);
+}
+
+.secondary-bg {
+  background-color: var(--color-secondary);
+}
+
+.accent-bg {
+  background-color: var(--color-accent);
+}
+
+.primary-text {
+  color: var(--color-primary);
+}
+
+.secondary-text {
+  color: var(--color-secondary);
+}
+
+.accent-text {
+  color: var(--color-accent);
+}
+
+:root {
+  --font-heading: 'Noto Serif Toto', serif;
+  --font-body: 'Noto Sans Palmyrene', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
 }

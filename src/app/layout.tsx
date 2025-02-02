@@ -10,10 +10,6 @@ const roboto = Roboto({
   weight: "100"
 });  
   
-const firaCode = Fira_Code({  
-  variable: "--font-fira-code",  
-  subsets: ["latin"],  
-});  
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",

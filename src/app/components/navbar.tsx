@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="bg-[#a28f65] shadow-lg text-black"> {/* Updated background color */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className=" mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo di sebelah kiri */}
           <div className="flex-shrink-0">
@@ -32,6 +32,7 @@ const Navbar: React.FC = () => {
                 alt="logo WEHA"
                 width={100}
                 height={30}
+                
                 className={`transition-transform duration-300 ${isHovered ? 'scale-110' : 'scale-100'}`}
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}

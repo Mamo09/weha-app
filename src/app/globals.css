@@ -49,3 +49,8 @@ h1, h2, h3, h4, h5, h6 {
 body {
   font-family: var(--font-body);
 }
+
+.image {
+  width: 100%; /* Atur lebar sesuai kebutuhan */
+  height: auto; /* Menjaga rasio aspek */
+}

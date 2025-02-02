@@ -37,7 +37,7 @@ const IconBlock: React.FC<IconBlockProps> = ({ icons, title, description }) => (
 
 const AboutUs : React.FC = () => (
   <>
-    <div className="max-w-7xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    <div className="px-8 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
         <div className="container mx-auto">
           <div className="grid gap-12">
             <div>
@@ -56,8 +56,7 @@ const AboutUs : React.FC = () => (
       </div>
 
       <div className='flex flex-wrap'>
-        <div className='sm:w-1/12'></div>
-        <div className=" px-4 sm:px-6 lg:px-8 lg:py-14 sm:w-5/12 container">
+        <div className=" px-4 sm:px-6 lg:px-8 lg:py-14 sm:w-6/12 container">
           <div className="max-w-2xl mx-auto">
             <div className="grid gap-12 text-justify">
               <div>
@@ -88,7 +87,7 @@ const AboutUs : React.FC = () => (
             </div>
           </div> 
         </div>
-        <div className=" px-4 sm:px-6 lg:px-8 lg:py-14 sm:w-5/12 container">
+        <div className=" px-4 sm:px-6 lg:px-8 lg:py-14 sm:w-6/12 container">
         <div className="max-w-2xl mx-auto">
           <div className="grid gap-12 text-justify">
             <div>
@@ -129,7 +128,6 @@ const AboutUs : React.FC = () => (
             </div>
           </div>
         </div>
-        <div className='sm:w-1/12'></div>
       </div>
     </div>
   </>
